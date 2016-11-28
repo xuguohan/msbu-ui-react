@@ -1,4 +1,4 @@
-const brandPrimary = '#108ee9';
+const brandPrimary = '#4A90E2';
 const brandPrimaryTap = '#1284d6';
 
 export default {
@@ -8,13 +8,13 @@ export default {
   // 色彩
   // ---
   // 文字色
-  color_text_base: '#333',                  // 基本
+  color_text_base: '#393C40',                  // 基本
   color_text_base_inverse: '#fff',          // 基本 _ 反色
   color_text_secondary: '#a4a9b0',          // 辅助色
-  color_text_placeholder: '#ccc',           // 文本框提示
-  color_text_disabled: '#bbb',              // 失效
-  color_text_caption: '#888',               // 辅助描述
-  color_text_paragraph: '#333',             // 段落
+  color_text_placeholder: '#B4B8BF',           // 文本框提示
+  color_text_disabled: '#B4B8BF',              // 失效
+  color_text_caption: '#757980',               // 辅助描述
+  color_text_paragraph: '#393C40',             // 段落
   color_link: brandPrimary,                 // 链接
 
   // 阴影色
@@ -34,11 +34,11 @@ export default {
   // 全局/品牌色
   brand_primary: brandPrimary,
   brand_primary_tap: brandPrimaryTap,
-  brand_success: '#6abf47',
-  brand_warning: '#f4333c',
+  brand_success: '#6EC3B4',
+  brand_warning: '#FACB5B',
   brand_error: '#f4333c',
-  brand_hot: '#f96268',        // 用于推荐/促销/折扣
-  brand_important: '#ff5b05',  // 用于小红点
+  brand_hot: '#69AFEF',        // 用于推荐/促销/折扣
+  brand_important: '#E95260',  // 用于小红点
 
   // 边框色
   border_color_base: '#ddd',
@@ -162,7 +162,7 @@ export default {
   notice_bar_height: 36,
 
   // switch
-  switch_fill: '#4dd865',
+  switch_fill: brandPrimary,
 
   // tag
   tag_height: 24,
