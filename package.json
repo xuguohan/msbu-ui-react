@@ -1,7 +1,7 @@
 {
-  "name": "antd-mobile",
+  "name": "msbu-ui-react",
   "version": "1.0.0-alpha.25",
-  "description": "基于 React 的移动设计规范实现",
+  "description": "在 ant.design 的基础上构建 msbu-ui-react 来满足MSBU的开发需要",
   "homepage": "http://mobile.ant.design",
   "keywords": [
     "ant",
