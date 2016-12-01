@@ -1,7 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
+import splitObject from '../_util/splitObject';
+import Touchable from 'rc-touchable';
 import { ListItemProps, BriefProps } from './PropsType';
-import getDataAttr from '../_util/getDataAttr';
 
 export class Brief extends React.Component<BriefProps, any> {
   render() {
@@ -11,9 +12,7 @@ export class Brief extends React.Component<BriefProps, any> {
   }
 }
 
-export default class ListItem extends React.Component<ListItemProps, any> {
-  static Brief = Brief;
-
+class ListItem extends React.Component<ListItemProps, any> {
   static defaultProps = {
     prefixCls: 'am-list',
     align: 'middle',
@@ -22,53 +21,26 @@ export default class ListItem extends React.Component<ListItemProps, any> {
     wrap: false,
   };
 
-  // 给其他组件对其设置 extra 使用
-  static myName = 'ListItem';
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      hover: false,
-    };
-  }
-
-  onClick = (e) => {
-    if (this.props.onClick) {
-      this.props.onClick(e);
-    }
-  };
-
-  onTouchStart = () => {
-    if (this.props.onClick) {
-      this.setState({
-        hover: true,
-      });
-    }
-  };
-
-  onTouchEnd = () => {
-    if (this.props.onClick) {
-      this.setState({
-        hover: false,
-      });
-    }
-  };
+  static Brief = Brief;
 
   render() {
-    const {
-      prefixCls, className, error, align, wrap,
-      children, multipleLine, thumb, extra, arrow = '', style,
-    } = this.props;
+    const [{
+      prefixCls, className, activeStyle, error, align, wrap,
+      disabled,
+      children, multipleLine, thumb, extra, arrow = '', onClick,
+    }, restProps] = splitObject(this.props,
+      ['prefixCls', 'className', 'activeStyle', 'error', 'align', 'wrap',
+        'children', 'multipleLine', 'thumb', 'disabled',
+        'extra', 'arrow', 'onClick']);
 
-    const wrapCls = classNames({
+    const wrapCls = {
+      [className as string]: className,
       [`${prefixCls}-item`]: true,
       [`${prefixCls}-item-error`]: error,
       [`${prefixCls}-item-top`]: align === 'top',
       [`${prefixCls}-item-middle`]: align === 'middle',
       [`${prefixCls}-item-bottom`]: align === 'bottom',
-      [`${prefixCls}-item-hover`]: this.state.hover,
-      [className as string]: className,
-    });
+    };
 
     const lineCls = classNames({
       [`${prefixCls}-line`]: true,
@@ -83,24 +55,31 @@ export default class ListItem extends React.Component<ListItemProps, any> {
       [`${prefixCls}-arrow-vertical-up`]: arrow === 'up',
     });
 
-    return (
-      <div {...getDataAttr(this.props)}
-        className={wrapCls}
-        onClick={this.onClick}
-        onTouchStart={this.onTouchStart}
-        onTouchEnd={this.onTouchEnd}
-        onTouchCancel={this.onTouchEnd}
-        style={style}
-      >
-        {thumb ? <div className={`${prefixCls}-thumb`}>
-          {typeof thumb === 'string' ? <img src={thumb} /> : thumb}
-        </div> : null}
-        <div className={lineCls}>
-          {children ? <div className={`${prefixCls}-content`}>{children}</div> : null}
-          {extra ? <div className={`${prefixCls}-extra`}>{extra}</div> : null}
-          {arrow ? <div className={arrowCls} /> : null}
-        </div>
+    const content =  <div
+      {...restProps}
+      className={classNames(wrapCls)}
+    >
+      {thumb ? <div className={`${prefixCls}-thumb`}>
+        {typeof thumb === 'string' ? <img src={thumb} /> : thumb}
+      </div> : null}
+      <div className={lineCls}>
+        {children ? <div className={`${prefixCls}-content`}>{children}</div> : null}
+        {extra ? <div className={`${prefixCls}-extra`}>{extra}</div> : null}
+        {arrow ? <div className={arrowCls} /> : null}
       </div>
+    </div>;
+
+    return (
+      <Touchable
+        disabled={disabled || !onClick}
+        onPress={onClick}
+        activeStyle={activeStyle}
+        activeClassName={`${prefixCls}-item-active`}
+      >
+        {content}
+      </Touchable>
     );
   }
 }
+
+export default ListItem;

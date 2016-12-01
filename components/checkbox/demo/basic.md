@@ -31,14 +31,8 @@ const Test = React.createClass({
           初中<List.Item.Brief>辅助文字内容</List.Item.Brief>
         </CheckboxItem>
       </List>
-      <Flex style={{ padding: 30 }}>
-        <Flex.Item style={{ padding: '30px 0', color: '#888', flex: 'none' }}>Checkbox 演示</Flex.Item>
-        <Flex.Item>
-          <Checkbox>选项一</Checkbox>
-          <Checkbox style={{ marginLeft: 10 }}>选项二</Checkbox>
-        </Flex.Item>
-      </Flex>
-      <Flex style={{ padding: 30 }}>
+
+      <Flex>
         <Flex.Item>
           <AgreeItem data-seed="logId">
             已阅读协议<a onClick={(e) => { e.preventDefault(); alert('打开协议'); }}>《协议链接》</a>
