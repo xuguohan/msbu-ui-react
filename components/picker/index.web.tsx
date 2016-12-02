@@ -1,6 +1,6 @@
 import React from 'react';
 import PopupCascader from 'rmc-cascader/lib/Popup';
-import Cascader from 'rmc-cascader/lib/Cascader';
+import Cascader from 'rmc-cascader/lib/Cascader.web';
 import treeFilter from 'array-tree-filter';
 import tsPropsType from './PropsType';
 

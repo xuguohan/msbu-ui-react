@@ -1,5 +1,5 @@
-import Modal from './Modal';
-import alert from './alert';
+import Modal from './Modal.web';
+import alert from './alert.web';
 import prompt from './prompt';
 
 (Modal as any).alert = alert;
