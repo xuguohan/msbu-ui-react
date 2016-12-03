@@ -1,9 +1,8 @@
-/* tslint:disable:no-switch-case-fall-through */
 import React from 'react';
+import assign from 'object-assign';
 import classNames from 'classnames';
-import getDataAttr from '../_util/getDataAttr';
 import splitObject from '../_util/splitObject';
-import Icon from '../icon';
+import Icon from '../icon/index.web';
 import NoticeBarProps from './PropsType';
 import Marquee from './marquee';
 
@@ -35,22 +34,22 @@ export default class NoticeBar extends React.Component<NoticeBarProps, any> {
   }
 
   render() {
-    const [{ mode, icon, onClick, children, className, prefixCls }, restProps] = splitObject(this.props,
-      ['mode', 'icon', 'onClick', 'children', 'className', 'prefixCls']);
+    const [{ mode, icon, onClick, children, className, prefixCls, marqueeProps }, restProps] = splitObject(this.props,
+      ['mode', 'icon', 'onClick', 'children', 'className', 'prefixCls', 'marqueeProps']);
 
     const extraProps: any = {};
     let operationDom: any = null;
     if (mode === 'closable') {
       operationDom = (
         <div className={`${prefixCls}-operation`} onClick={this.onClick}>
-          <Icon type="cross"  size="md" />
+          <Icon type="cross" size="md" />
         </div>
       );
     } else {
       if (mode === 'link') {
         operationDom = (
           <div className={`${prefixCls}-operation`}>
-            <Icon type="right"  size="md" />
+            <Icon type="right" size="md" />
           </div>
         );
       }
@@ -62,11 +61,19 @@ export default class NoticeBar extends React.Component<NoticeBarProps, any> {
       [className as string]: !!className,
     });
 
+    let marquee = assign({}, {
+      loop: false,
+      leading: 500,
+      trailing: 800,
+      fps: 40,
+      style: {},
+    }, marqueeProps);
+
     return this.state.show ? (
-      <div {...getDataAttr(this.props) } className={wrapCls} {...restProps} {...extraProps}>
+      <div className={wrapCls} {...restProps} {...extraProps}>
         { icon ? <div className={`${prefixCls}-icon`}> {icon} </div> : null }
         <div className={`${prefixCls}-content`}>
-          <Marquee prefixCls={prefixCls} loop text={children} />
+          <Marquee prefixCls={prefixCls} text={children} {...marquee} />
         </div>
         {operationDom}
       </div>

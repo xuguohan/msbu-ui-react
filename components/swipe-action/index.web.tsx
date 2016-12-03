@@ -2,7 +2,7 @@ import React from 'react';
 import Swipeout from 'rc-swipeout';
 import Hammer from 'react-hammerjs';
 import classNames from 'classnames';
-import Modal from '../modal';
+import Modal from '../modal/index.web';
 import SwipeActionProps from './PropsType';
 
 export interface ButtonProps {

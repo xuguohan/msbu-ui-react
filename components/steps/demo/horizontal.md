@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 1
 title: 水平方向的步骤条
 ---
 
@@ -24,6 +24,7 @@ ReactDOM.render(
   <div className="stepsExample">
     <WhiteSpace mode={20} />
     <WingBlank mode={20}>
+      <Steps current={1} direction="horizontal" size="small">{steps}</Steps>
       <Steps current={1} direction="horizontal">{steps}</Steps>
       <WhiteSpace mode={20} />
       <Steps direction="horizontal">

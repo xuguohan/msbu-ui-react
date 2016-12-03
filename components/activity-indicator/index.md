@@ -3,6 +3,7 @@ category: Components
 type: Feedback
 chinese: 活动指示器
 english: ActivityIndicator
+source: design
 ---
 
 
@@ -26,7 +27,7 @@ english: ActivityIndicator
 <ActivityIndicator toast text="正在加载" />
 ```
 
-### ActivityIndicator
+### ActivityIndicator ( 适用平台：WEB、React-Native )
 
 活动指示器。
 

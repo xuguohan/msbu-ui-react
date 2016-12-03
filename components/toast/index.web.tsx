@@ -2,7 +2,7 @@
 import React from 'react';
 /* tslint:enable:no-unused-variable */
 import Notification from 'rc-notification';
-import Icon from '../icon';
+import Icon from '../icon/index.web';
 
 let messageInstance;
 let prefixCls = 'am-toast';
@@ -19,8 +19,8 @@ function getMessageInstance() {
 function notice(content, type, duration = 3, onClose) {
   let iconType = ({
     info: '',
-    success: 'check-circle-o',
-    fail: 'cross-circle-o',
+    success: require('./style/assets/success.svg'),
+    fail: require('./style/assets/fail.svg'),
     offline: require('./style/assets/dislike.svg'),
     loading: 'loading',
   })[type];

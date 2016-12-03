@@ -20,20 +20,13 @@ let BasicInputExample = React.createClass({
       <InputItem
         {...getFieldProps('control')}
         placeholder="设置value,不设置defaultValue"
-      >受控<span style={{ color: 'red' }}>*</span></InputItem>
+      >受控</InputItem>
 
       <InputItem
         {...getFieldProps('inputclear')}
         clear
         placeholder="提供清除文字功能"
       >显示清除按钮</InputItem>
-      <InputItem
-        {...getFieldProps('input7', {
-          initialValue: '校验出错',
-        })}
-        error
-        onErrorClick={() => { alert('点击报错'); }}
-      >报错样式</InputItem>
 
       <InputItem
         {...getFieldProps('input3')}
@@ -41,26 +34,16 @@ let BasicInputExample = React.createClass({
       />
       <InputItem
         {...getFieldProps('inputtitle2')}
-        placeholder="标题可自定义"
+        placeholder="标题可自定义为icon，图片或文字"
       >
-        <div style={{ backgroundImage: 'url(https://os.alipayobjects.com/rmsportal/zumwvwrngNMGSWe.png)', backgroundSize: 'cover', height: '0.44rem', width: '0.44rem' }} />
+        <div style={{ backgroundImage: 'url(https://zos.alipayobjects.com/rmsportal/DfkJHaJGgMghpXdqNaKF.png)', backgroundSize: 'cover', height: '0.44rem', width: '0.44rem' }} />
       </InputItem>
-
-      <InputItem
-        {...getFieldProps('label8')}
-        placeholder="限制标题显示的长度"
-        labelNumber={3}
-      >标题过长</InputItem>
 
       <InputItem
         {...getFieldProps('preice')}
         placeholder="0.00"
         extra="元"
       >价格</InputItem>
-      <InputItem
-        {...getFieldProps('upload')}
-        extra={<img src="https://os.alipayobjects.com/rmsportal/mOoPurdIfmcuqtr.png" />}
-      >上传照片</InputItem>
 
       <InputItem
         {...getFieldProps('bankCard', {
@@ -92,6 +75,12 @@ let BasicInputExample = React.createClass({
         value="这个是禁用状态的样式"
         disabled
       >姓名</InputItem>
+
+      <InputItem
+        {...getFieldProps('label8')}
+        placeholder="限制标题显示的长度"
+        labelNumber={3}
+      >标题过长</InputItem>
     </List>);
   },
 });

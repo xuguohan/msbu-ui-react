@@ -1,6 +1,6 @@
 import React from 'react';
 import PopupCascader from 'rmc-cascader/lib/Popup';
-import Cascader from 'rmc-cascader/lib/Cascader';
+import Cascader from 'rmc-cascader/lib/Cascader.web';
 import treeFilter from 'array-tree-filter';
 import tsPropsType from './PropsType';
 
@@ -62,8 +62,8 @@ export default class Picker extends React.Component<tsPropsType, any> {
         {...props}
         prefixCls={popupPrefixCls}
         value={value}
-        dismissText={<span className={`${popupPrefixCls}-header-cancel-button`}>{dismissText}</span>}
-        okText={<span className={`${popupPrefixCls}-header-ok-button`}>{okText}</span>}
+        dismissText={dismissText}
+        okText={okText}
       >
         {childEl}
       </PopupCascader>

@@ -10,22 +10,17 @@ const noop: any = () => {
 
 export default class InputItem extends React.Component<InputItemProps, any> {
   static defaultProps = {
-    prefixCls: 'am-input',
-    prefixListCls: 'am-list',
     type: 'text',
     editable: true,
-    name: '',
     value: '',
-    placeholder: '',
     clear: false,
-    maxLength: -1,
     onChange: noop,
     onBlur: noop,
     onFocus: noop,
     extra: '',
-    onExtraPress: noop,
+    onExtraClick: noop,
     error: false,
-    onErrorPress: noop,
+    onErrorClick: noop,
     size: 'large',
     labelNumber: 4,
     labelPosition: 'left',
@@ -40,7 +35,6 @@ export default class InputItem extends React.Component<InputItemProps, any> {
 
   onChange = (text) => {
     const { maxLength, onChange, type } = this.props;
-
     switch (type) {
       case 'text':
         if (maxLength > 0) {
@@ -82,7 +76,7 @@ export default class InputItem extends React.Component<InputItemProps, any> {
 
   render() {
     const {
-      type, style, clear, children, error, extra, labelNumber, last, onExtraPress = noop, onErrorPress = noop, styles,
+      type, style, clear, children, error, extra, labelNumber, last, onExtraClick = noop, onErrorClick = noop, styles,
     } = this.props;
 
     const containerStyle = {
@@ -104,7 +98,7 @@ export default class InputItem extends React.Component<InputItemProps, any> {
 
     const restProps = assign({}, this.props);
     [
-      'type', 'style', 'clear', 'children', 'error', 'extra', 'labelNumber', 'last', 'onExtraPress', 'onErrorPress',
+      'type', 'style', 'clear', 'children', 'error', 'extra', 'labelNumber', 'last', 'onExtraClick', 'onErrorClick',
       'keyboardType', 'onChange', 'secureTextEntry', 'styles',
     ].forEach(prop => {
       if (restProps.hasOwnProperty(prop)) {
@@ -125,7 +119,7 @@ export default class InputItem extends React.Component<InputItemProps, any> {
           {...restProps}
         />
         {extra ? <TouchableWithoutFeedback
-          onPress={onExtraPress}
+          onPress={onExtraClick}
         >
           <View>
             <Text style={[styles.extra, extraStyle]}>{extra}</Text>
@@ -134,7 +128,7 @@ export default class InputItem extends React.Component<InputItemProps, any> {
         {
           error &&
           <TouchableWithoutFeedback
-            onPress={onErrorPress}
+            onPress={onErrorClick}
           >
             <View style={[styles.errorIcon]}>
               <Image

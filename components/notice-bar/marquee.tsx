@@ -6,10 +6,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-const FPS = 40;
-const STEP = 1;
-const TIMEOUT = 1 / FPS * 1000;
+import assign from 'object-assign';
 
 export interface MarqueeProp {
   prefixCls?: string;
@@ -18,6 +15,7 @@ export interface MarqueeProp {
   leading?: number;
   trailing?: number;
   className?: string;
+  fps?: number;
 }
 
 const Marquee = React.createClass<MarqueeProp, any>({
@@ -27,6 +25,7 @@ const Marquee = React.createClass<MarqueeProp, any>({
       loop: false,
       leading: 500,
       trailing: 800,
+      fps: 40,
       className: '',
     };
   },
@@ -56,12 +55,12 @@ const Marquee = React.createClass<MarqueeProp, any>({
 
   render() {
     const { prefixCls, className, text } = this.props;
-    const style = {
-      'position': 'relative',
-      'right': this.state.animatedWidth,
-      'whiteSpace': 'nowrap',
-      'display': 'inline-block',
-    };
+    const style = assign({
+      position: 'relative',
+      right: this.state.animatedWidth,
+      whiteSpace: 'nowrap',
+      display: 'inline-block',
+    }, this.props.style);
     return (
       <div className={`${prefixCls}-marquee ${className}`} style={{ overflow: 'hidden' }}>
         <div ref="text" style={style}>{text} </div>
@@ -71,12 +70,13 @@ const Marquee = React.createClass<MarqueeProp, any>({
 
   _startAnimation() {
     clearTimeout(this._marqueeTimer);
+    const TIMEOUT = 1 / this.props.fps * 1000;
     const isLeading = this.state.animatedWidth === 0;
     const timeout = isLeading ? this.props.leading : TIMEOUT;
 
     const animate = () => {
       const {overflowWidth} = this.state;
-      let animatedWidth = this.state.animatedWidth + STEP;
+      let animatedWidth = this.state.animatedWidth + 1;
       const isRoundOver = animatedWidth > overflowWidth;
 
       if (isRoundOver) {

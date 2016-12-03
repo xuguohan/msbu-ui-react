@@ -1,7 +1,7 @@
 /* eslint no-console:0 */
 import React from 'react';
 import PopupDatePicker from 'rmc-date-picker/lib/Popup';
-import RCDatePicker from 'rmc-date-picker/lib/DatePicker';
+import RCDatePicker from 'rmc-date-picker/lib/DatePicker.web';
 import { formatFn, getProps } from './utils';
 import assign from 'object-assign';
 import tsPropsType from './PropsType';
@@ -43,8 +43,8 @@ export default class DatePicker extends React.Component<tsPropsType, any> {
         {...props}
         prefixCls={popupPrefixCls}
         date={value || defaultDate}
-        dismissText={<span className={`${popupPrefixCls}-header-cancel-button`}>{dismissText}</span>}
-        okText={<span className={`${popupPrefixCls}-header-ok-button`}>{okText}</span>}
+        dismissText={dismissText}
+        okText={okText}
       >
         {React.cloneElement(children,
           children.type && children.type.myName === 'ListItem' ? extraProps : {})}
