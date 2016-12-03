@@ -1,6 +1,6 @@
 {
   "name": "msbu-ui-react",
-  "version": "0.9.19",
+  "version": "0.9.20",
   "description": "在 ant.design 的基础上构建 msbu-ui-react 来满足MSBU的开发需要",
   "homepage": "http://mobile.ant.design",
   "keywords": [
@@ -16,10 +16,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/ant-design/ant-design-mobile"
+    "url": "https://github.com/msbu-fe/msbu-ui-react"
   },
   "bugs": {
-    "url": "http://github.com/ant-design/ant-design-mobile/issues"
+    "url": "https://github.com/msbu-fe/msbu-ui-react/issues"
   },
   "files": [
     "dist",
@@ -127,7 +127,7 @@
     "lesshint": "lesshint components/ -r scripts/lesshint-report.js",
     "eslint-fix": "eslint --fix site scripts ./*.js --ext '.js,.jsx' && eslint-tinker ./components/*/demo/*.md",
     "pre-publish": "node ./scripts/build-less-entry",
-    "prepublish": "npm run clean && npm run build && npm run compile",
+    "prepublish": "antd-tools run guard",
     "test": "npm run lint && npm run dist",
     "authors": "git log --format='%aN <%aE>' | sort -u | grep -v 'users.noreply.github.com' > AUTHORS.txt",
     "dist": "antd-tools run dist",
