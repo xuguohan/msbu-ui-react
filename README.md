@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# Ant Design Mobile [![](https://img.shields.io/travis/ant-design/ant-design-mobile.svg?style=flat-square)](https://travis-ci.org/ant-design/ant-design-mobile) [![npm package](https://img.shields.io/npm/v/antd-mobile.svg?style=flat-square)](https://www.npmjs.org/package/antd-mobile) [![NPM downloads](http://img.shields.io/npm/dm/antd-mobile.svg?style=flat-square)](https://npmjs.org/package/antd-mobile) [![Dependency Status](https://david-dm.org/ant-design/ant-design-mobile.svg?style=flat-square)](https://david-dm.org/ant-design/ant-design-mobile)
+# Ant Design Mobile [![](https://img.shields.io/travis/msbu-ui-react/msbu-ui-react.svg?style=flat-square)](https://travis-ci.org/msbu-ui-react/msbu-ui-react) [![npm package](https://img.shields.io/npm/v/msbu-ui-react.svg?style=flat-square)](https://www.npmjs.org/package/msbu-ui-react) [![NPM downloads](http://img.shields.io/npm/dm/msbu-ui-react.svg?style=flat-square)](https://npmjs.org/package/msbu-ui-react) [![Dependency Status](https://david-dm.org/msbu-ui-react/msbu-ui-react.svg?style=flat-square)](https://david-dm.org/msbu-ui-react/msbu-ui-react)
 
 A configurable Mobile UI specification and React-based implementation.
 

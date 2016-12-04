@@ -1,4 +1,4 @@
-const brandPrimary = '#108ee9';
+const brandPrimary = '#4A90E2';
 const brandPrimaryTap = '#1284d6';
 
 export default {
@@ -8,24 +8,24 @@ export default {
   // 色彩
   // ---
   // 文字色
-  color_text_base: '#000',                  // 基本
+  color_text_base: '#393C40',                  // 基本
   color_text_base_inverse: '#fff',          // 基本 _ 反色
   color_text_secondary: '#a4a9b0',          // 辅助色
-  color_text_placeholder: '#ccc',           // 文本框提示
-  color_text_disabled: '#bbb',              // 失效
-  color_text_caption: '#888',               // 辅助描述
-  color_text_paragraph: '#333',             // 段落
+  color_text_placeholder: '#B4B8BF',           // 文本框提示
+  color_text_disabled: '#B4B8BF',              // 失效
+  color_text_caption: '#757980',               // 辅助描述
+  color_text_paragraph: '#393C40',             // 段落
   color_link: brandPrimary,                 // 链接
 
   // 阴影色
-  color_shadow: 'rgba(100, 100, 100, .2)',  // 阴影色
+  color_shadow: 'rgba(0, 0, 0, .21)',  // 阴影色
 
   // 背景色
   fill_base: '#fff',                           // 组件默认背景
   fill_body: '#f5f5f9',                        // 页面背景
   fill_tap: '#ddd',                            // 组件默认背景 _ 按下
   fill_disabled: '#ddd',                       // 通用失效背景
-  fill_mask: 'rgba(0, 0, 0, .5)',              // 遮罩背景
+  fill_mask: 'rgba(0, 0, 0, .4)',              // 遮罩背景
   fill_overlay_inverse: 'rgba(0, 0, 0, .8)',   // 浮层背景 _ 反色，用于 toast
 
   // 透明度
@@ -34,11 +34,11 @@ export default {
   // 全局/品牌色
   brand_primary: brandPrimary,
   brand_primary_tap: brandPrimaryTap,
-  brand_success: '#6abf47',
-  brand_warning: '#f86e21',
+  brand_success: '#6EC3B4',
+  brand_warning: '#FACB5B',
   brand_error: '#f4333c',
-  brand_hot: '#f96268',        // 用于推荐/促销/折扣
-  brand_important: '#ff3b30',  // 用于小红点
+  brand_hot: '#69AFEF',        // 用于推荐/促销/折扣
+  brand_important: '#E95260',  // 用于小红点
 
   // 边框色
   border_color_base: '#ddd',
@@ -50,7 +50,7 @@ export default {
   font_size_base: 13,
   font_size_subhead: 14,
   font_size_caption: 15,
-  font_size_heading: 17,
+  font_size_heading: 16,
   font_size_display_sm: 18,
   font_size_display_md: 21,
   font_size_display_lg: 24,
@@ -78,8 +78,8 @@ export default {
   // 间距
   // ---
   // 水平间距
-  h_spacing_sm: 6,
-  h_spacing_md: 9,
+  h_spacing_sm: 5,
+  h_spacing_md: 8,
   h_spacing_lg: 15,
 
   // 垂直间距
@@ -162,7 +162,7 @@ export default {
   notice_bar_height: 36,
 
   // switch
-  switch_fill: '#4dd865',
+  switch_fill: brandPrimary,
 
   // tag
   tag_height: 24,

@@ -1,7 +1,7 @@
 {
-  "name": "antd-mobile",
-  "version": "0.9.11",
-  "description": "基于 React 的移动设计规范实现",
+  "name": "msbu-ui-react",
+  "version": "0.1.1",
+  "description": "在 ant.design 的基础上构建 msbu-ui-react 来满足MSBU的开发需要",
   "homepage": "http://mobile.ant.design",
   "keywords": [
     "ant",
@@ -16,10 +16,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/ant-design/ant-design-mobile"
+    "url": "https://github.com/msbu-fe/msbu-ui-react"
   },
   "bugs": {
-    "url": "http://github.com/ant-design/ant-design-mobile/issues"
+    "url": "https://github.com/msbu-fe/msbu-ui-react/issues"
   },
   "files": [
     "dist",
