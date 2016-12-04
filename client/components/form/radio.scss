@@ -1,0 +1,21 @@
+// method2 accessbility
+.msbu-cells_radio{
+    .msbu-cell__ft {
+        padding-left: 20px;
+    }
+}
+.msbu-check {
+    // radio
+    .msbu-cells_radio & {
+        &:checked {
+            & + .msbu-icon-checked {
+                &:before {
+                    display: block;
+                    content: '\EA08';
+                    color: #09BB07;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

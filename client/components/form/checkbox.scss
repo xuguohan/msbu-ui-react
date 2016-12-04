@@ -1,0 +1,28 @@
+.msbu-cells_checkbox {
+    .msbu-cell__hd {
+        padding-right: 10px;
+    }
+    .msbu-icon-checked {
+        &:before {
+            content: '\EA01';
+            color: #C9C9C9;
+            font-size: 23px;
+            display: block;
+        }
+    }
+}
+
+// method2 accessbility
+.msbu-check {
+    // checkbox
+    .msbu-cells_checkbox & {
+        &:checked {
+            & + .msbu-icon-checked {
+                &:before {
+                    content: '\EA06';
+                    color: #09BB07;
+                }
+            }
+        }
+    }
+}

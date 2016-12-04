@@ -1,0 +1,87 @@
+.msbu-form-preview{
+    position: relative;
+    background-color: #FFFFFF;
+    &:before{
+        border-top: 1px solid #999;
+    }
+    &:after{
+        border-bottom: 1px solid #999;
+    }
+}
+.msbu-form-preview__hd{
+    position: relative;
+    padding: 15px 20px;
+    text-align: right;
+    line-height: 2.5em;
+    &:after{
+        border-bottom: 1px solid #999;
+        left: 10px;
+    }
+    .msbu-form-preview__value{
+        font-style: normal;
+        font-size: 1.6em;
+    }
+}
+.msbu-form-preview__bd{
+    padding: 15px 20px;
+    font-size: .9em;
+    text-align: right;
+    color: #999;
+    line-height: 2;
+}
+.msbu-form-preview__ft{
+    position: relative;
+    line-height: 50px;
+    display: flex;
+    &:after {
+        border-top: 1px solid #999;
+    }
+}
+.msbu-form-preview__item{
+    overflow: hidden;
+}
+.msbu-form-preview__label{
+    float: left;
+    margin-right: 1em;
+    min-width: 4em;
+    color: #999;
+    text-align: justify;
+    text-align-last: justify;
+}
+.msbu-form-preview__value{
+    display: block;
+    overflow: hidden;
+    word-break:normal;
+    word-wrap: break-word;
+}
+.msbu-form-preview__btn {
+    position: relative;
+    display: block;
+    flex: 1;
+    color: #4A90E2;
+    text-align: center;
+    .setTapColor();
+    button&{
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        font-size: inherit;
+    }
+    &:active {
+        background-color: #4A90E2;
+    }
+    &:after {
+        border-left: 1px solid #999;
+    }
+    &:first-child {
+        &:after {
+            display: none;
+        }
+    }
+}
+.msbu-form-preview__btn_default {
+    color: #999;
+}
+.msbu-form-preview__btn_primary {
+    color: #0BB20C;
+}

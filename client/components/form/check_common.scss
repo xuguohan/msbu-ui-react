@@ -1,0 +1,11 @@
+.msbu-check__label {
+    .setTapColor();
+    &:active {
+        background-color: #ECECEC;
+    }
+}
+
+.msbu-check{
+    position: absolute;
+    left: -9999em;
+}
