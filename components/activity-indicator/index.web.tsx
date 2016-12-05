@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import ActivityIndicatorProps from './PropsType';
+import './style/index.web';
 
 export default class ActivityIndicator extends React.Component<ActivityIndicatorProps, any> {
   static defaultProps = {

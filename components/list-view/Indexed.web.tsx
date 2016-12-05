@@ -3,6 +3,7 @@ import MListView from 'rmc-list-view';
 import tsPropsType from './PropsType';
 import handleProps from './handleProps';
 const IndexedList = MListView.IndexedList;
+import './style/index.web';
 
 export default class MIndexedList extends React.Component<tsPropsType, any> {
   static defaultProps = {

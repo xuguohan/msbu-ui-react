@@ -4,6 +4,7 @@ import TabsProps from './PropsType';
 import SwipeableTabContent from 'rc-tabs/lib/SwipeableTabContent';
 import TabContent from 'rc-tabs/lib/TabContent';
 import InkTabBar from 'rc-tabs/lib/InkTabBar';
+import './style/index.web';
 
 const Tabs = React.createClass<TabsProps, any>({
   statics: {

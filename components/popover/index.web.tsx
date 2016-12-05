@@ -2,6 +2,7 @@ import React from 'react';
 import Tooltip from 'rc-tooltip';
 import Item from './item.web';
 import tsPropsType from './PropsType';
+import './style/index.web';
 
 function recursiveCloneChildren(children, cb = (ch: any, _i: number) => ch) {
   return React.Children.map(children, (child, index) => {

@@ -5,6 +5,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Dialog from 'rc-dialog';
 import assign from 'object-assign';
+import './style/index.web';
 
 function create(instanceId, config, content, afterClose = (_x: any) => { }) {
   const props = assign({}, {

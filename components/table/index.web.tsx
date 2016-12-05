@@ -1,6 +1,7 @@
 import React from 'react';
 import assign from 'object-assign';
 import RcTable from 'rc-table';
+import './style/index.web';
 
 export default class Table extends React.Component<any, any> {
   static defaultProps = {

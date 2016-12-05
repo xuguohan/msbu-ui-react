@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import splitObject from '../_util/splitObject';
 import Icon from '../icon';
 import NoticeBarProps from './PropsType';
+import './style/index.web';
 
 export default class NoticeBar extends React.Component<NoticeBarProps, any> {
   static defaultProps = {

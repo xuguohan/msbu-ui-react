@@ -5,6 +5,7 @@ import ListView from 'rmc-list-view';
 import Icon from '../icon';
 // import tsPropsType from './PropsType';
 import assign from 'object-assign';
+import './style/index.web';
 
 ListView.RefreshControl.defaultProps = assign({}, ListView.RefreshControl.defaultProps, {
   prefixCls: 'am-refresh-control',

@@ -8,6 +8,7 @@ import Icon from '../icon/index.web';
 import assign from 'object-assign';
 import getDataAttr from '../_util/getDataAttr';
 import ButtonListItem from './ButtonListItem.web';
+import './style/index.web';
 
 const NORMAL = 'NORMAL';
 const SHARE = 'SHARE';

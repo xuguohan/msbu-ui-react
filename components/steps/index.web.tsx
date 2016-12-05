@@ -1,5 +1,6 @@
 import React from 'react';
 import RcSteps from 'rc-steps';
+import './style/index.web';
 
 export interface StepsProps {
   prefixCls?: string;

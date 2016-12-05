@@ -4,6 +4,7 @@ import Tab from './Tab.web';
 import TabContent from 'rc-tabs/lib/TabContent';
 import TabBar from 'rc-tabs/lib/TabBar';
 import getDataAttr from '../_util/getDataAttr';
+import './style/index.web';
 
 const AntTabBar = React.createClass({
   statics: {

@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import Flex from '../flex';
 import Carousel from '../carousel/index.web';
 import { DataItem, GridProps } from './PropsType';
+import './style/index.web';
 
 export default class Grid extends React.Component<GridProps, any> {
   static defaultProps = {

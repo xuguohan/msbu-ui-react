@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import assign from 'object-assign';
 import ProgressProps from './PropsType';
+import './style/index.web';
 
 export default class Progress extends React.Component<ProgressProps, any> {
   static defaultProps = {

@@ -2,6 +2,7 @@ import React from 'react';
 import Item from './ListItem';
 import classNames from 'classnames';
 import { ListProps } from './PropsType';
+import './style/index.web';
 
 export default class List extends React.Component<ListProps, any> {
   static Item = Item;

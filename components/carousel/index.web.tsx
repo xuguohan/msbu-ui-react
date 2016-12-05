@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import ReactCarousel from 'nuka-carousel';
 import assign from 'object-assign';
+import './style/index.web';
 
 export interface CarouselProps {
   selectedIndex?: number;

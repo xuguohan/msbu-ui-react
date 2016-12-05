@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import TextareaItemProps from './PropsType';
 import omit from 'omit.js';
+import './style/index.web';
 
 function noop() {}
 
