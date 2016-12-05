@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import CardHeader from './CardHeader';
 import CardBody from './CardBody';
 import CardFooter from './CardFooter';
+import './style/index.web';
 
 export interface CardProps {
   prefixCls?: string;

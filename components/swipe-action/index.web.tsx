@@ -4,6 +4,7 @@ import Hammer from 'react-hammerjs';
 import classNames from 'classnames';
 import Modal from '../modal';
 import SwipeActionProps from './PropsType';
+import './style/index.web';
 
 export interface ButtonProps {
   text?: string;

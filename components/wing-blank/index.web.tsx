@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import WingBlankProps from './PropsType';
+import './style/index.web';
 
 export default class WingBlank extends React.Component<WingBlankProps, any> {
   static defaultProps = {

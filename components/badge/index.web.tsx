@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import BadgeProps from './PropsType';
+import './style/index.web';
 
 export default class Badge extends React.Component<BadgeProps, any> {
   static defaultProps = {

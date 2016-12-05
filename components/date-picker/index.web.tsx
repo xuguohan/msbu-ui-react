@@ -5,6 +5,7 @@ import RCDatePicker from 'rmc-date-picker/lib/DatePicker';
 import { formatFn, getProps } from './utils';
 import assign from 'object-assign';
 import tsPropsType from './PropsType';
+import './style/index.web';
 
 function getDefaultProps() {
   return assign({

@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import { SearchBarProps, SearchBarState, defaultProps } from './PropsType';
+import './style/index.web';
 
 export default class SearchBar extends React.Component<SearchBarProps, SearchBarState> {
   static defaultProps = defaultProps;

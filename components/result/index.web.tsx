@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '../button';
 import classNames from 'classnames';
 import ResultProps from './PropsType';
+import './style/index.web';
 function noop() {}
 
 export default class Result extends React.Component<ResultProps, any> {

@@ -3,6 +3,7 @@ import PopupCascader from 'rmc-cascader/lib/Popup';
 import Cascader from 'rmc-cascader/lib/Cascader';
 import treeFilter from 'array-tree-filter';
 import tsPropsType from './PropsType';
+import './style/index.web';
 
 function getDefaultProps() {
   const defaultFormat = (values) => {

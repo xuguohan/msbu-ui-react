@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import SwitchProps from './PropsType';
+import './style/index.web';
 
 export default class Switch extends React.Component<SwitchProps, any> {
   static defaultProps = {

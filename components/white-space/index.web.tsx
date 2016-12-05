@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import WhiteSpaceProps from './PropsType';
+import './style/index.web';
 
 export default class WhiteSpace extends React.Component<WhiteSpaceProps, any> {
   static defaultProps = {

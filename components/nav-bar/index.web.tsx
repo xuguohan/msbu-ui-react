@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import Icon from '../icon';
 import splitObject from '../_util/splitObject';
 import NavBarProps from './PropsType';
+import './style/index.web';
 
 export default class NavBar extends React.Component<NavBarProps, any> {
   static defaultProps = {

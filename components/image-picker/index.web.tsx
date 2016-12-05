@@ -6,6 +6,7 @@ import Flex from '../flex';
 import Toast from '../toast';
 import { ImagePickerPropTypes } from './PropsType';
 import TouchableButton from './touchableButton.web';
+import './style/index.web';
 
 function noop() { }
 

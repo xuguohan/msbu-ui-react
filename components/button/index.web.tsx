@@ -5,6 +5,7 @@ import Icon from '../icon/index.web';
 import splitObject from '../_util/splitObject';
 import touchableFeedback from '../_util/touchableFeedback';
 import tsProps from './PropsType';
+import './style/index.web';
 
 const rxTwoCNChar = /^[\u4e00-\u9fa5]{2}$/;
 const isTwoCNChar = rxTwoCNChar.test.bind(rxTwoCNChar);

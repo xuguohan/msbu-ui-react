@@ -5,6 +5,7 @@ import SubMenu from './SubMenu.web';
 import List from '../list';
 import Flex from '../flex';
 import { MenuProps, MenuState } from './PropsType';
+import './style/index.web';
 
 export default class Menu extends React.Component<MenuProps, MenuState> {
   static defaultProps = {

@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import Button from '../button';
 import Flex from '../flex';
 import PaginationProps from './PropsType';
+import './style/index.web';
 
 export default class Pagination extends React.Component<PaginationProps, any> {
   static defaultProps = {
