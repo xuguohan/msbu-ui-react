@@ -1,5 +1,6 @@
 import React from 'react';
 import assign from 'object-assign';
+import './style/index.web';
 
 export default class View extends React.Component<any, any> {
   static defaultProps = {
