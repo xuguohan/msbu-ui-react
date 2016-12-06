@@ -68,6 +68,7 @@ function createActionSheet(flag, config, callback) {
               [`${prefixCls}-button-list-item`]: true,
               [`${prefixCls}-destructive-button`]: destructiveButtonIndex === index,
               [`${prefixCls}-cancel-button`]: cancelButtonIndex === index,
+              [item.className]: !!item.className,
             };
             const itemProps = {
               key: index,
@@ -75,10 +76,10 @@ function createActionSheet(flag, config, callback) {
               className: classNames(cls),
               onClick: () => cb(index),
             };
-            let bItem = (<ButtonListItem {...itemProps}>{item}</ButtonListItem>);
+            let bItem = (<ButtonListItem {...itemProps}>{item.text}</ButtonListItem>);
             if (cancelButtonIndex === index || destructiveButtonIndex === index) {
               bItem = (<ButtonListItem {...itemProps}>
-                {item}
+                {item.text}
                 {cancelButtonIndex === index ?
                   <span className={`${prefixCls}-cancel-button-mask`}></span> : null}
               </ButtonListItem>);
@@ -124,8 +125,8 @@ function createActionSheet(flag, config, callback) {
   }
 
   const rootCls = classNames({
-    [className as string]: !!className,
     [`${prefixCls}-${mode}`]: true,
+    [className as string]: !!className,
   });
 
   ReactDOM.render(<Dialog
