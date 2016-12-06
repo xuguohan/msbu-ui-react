@@ -12,5 +12,5 @@ export interface IconProps {
 
 export default (props: IconProps) => {
   const { type, className = '' } = props;
-  return <i {...props} className={`${className} anticon anticon-${type}`.trim()} />;
+  return <i {...props} className={`${className} anticon anticon-${type.replace(/-/g, '')}`.trim()} />;
 };
