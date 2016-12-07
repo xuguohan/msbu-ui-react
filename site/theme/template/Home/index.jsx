@@ -108,7 +108,7 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <DocumentTitle title="Ant Design Mobile | 移动端设计规范">
+      <DocumentTitle title="MSBU-UI-React | 基于 Ant Design Mobile - 移动端设计规范">
         <div className="main-wrapper">
           <Link />
           <Banner />

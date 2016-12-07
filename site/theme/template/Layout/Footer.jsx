@@ -69,10 +69,7 @@ export default class Footer extends React.Component {
           <li>
             <h2>源码</h2>
             <div>
-              <a target="_blank " rel="noopener noreferrer" href="http://github.com/ant-design">antd</a>
-            </div>
-            <div>
-              <a target="_blank " rel="noopener noreferrer" href="http://github.com/ant-design/ant-design-mobile">antd-mobile</a>
+              <a target="_blank " rel="noopener noreferrer" href="http://github.com/msbu-fe/msbu-ui-react">msbu-ui-react</a>
             </div>
             <div>
               <a target="_blank" rel="noopener noreferrer" href="https://github.com/react-component">react-component</a>
@@ -87,12 +84,12 @@ export default class Footer extends React.Component {
           </li>
           <li>
             <h2>联系我们</h2>
-            <a target="_blank" rel="noopener noreferrer" href="http://github.com/ant-design/ant-design-mobile/issues">
+            <a target="_blank" rel="noopener noreferrer" href="http://github.com/msbu-ui-react/msbu-ui-react/issues">
               反馈和建议
             </a>
           </li>
           <li>
-            <div>©2016 蚂蚁金服体验技术部 & 口碑终端技术部出品</div>
+            <div>©2016 MSBU-FE</div>
             <div>Powered by <a href="https://github.com/benjycui/bisheng">BiSheng</a></div>
             <div>
               文档版本：

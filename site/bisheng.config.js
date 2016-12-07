@@ -14,6 +14,7 @@ function pickerGenerator(module) {
 }
 
 module.exports = {
+  root: '/msbu-ui-react/',
   port: 8001,
   source: [
     './components',

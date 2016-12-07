@@ -27,7 +27,7 @@ const Test = React.createClass({
     };
   },
   showActionSheet() {
-    const BUTTONS = [{ text: '操作一', className: 'custumClassName' }, { text: '操作二' }, { text: '操作三' }, { text: '删除' }, { text: '取消' }];
+    const BUTTONS = [{ text: '操作一 - 修改过啦', className: 'custumClassName' }, { text: '操作二' }, { text: '操作三' }, { text: '删除' }, { text: '取消' }];
     ActionSheet.showActionSheetWithOptions({
       options: BUTTONS,
       cancelButtonIndex: BUTTONS.length - 1,
@@ -82,7 +82,7 @@ const Test = React.createClass({
   render() {
     return (<div style={{ margin: '0 15px' }}>
       <div style={{ margin: '15px 0' }}>
-        <Button type="ghost" onClick={this.showActionSheet}>默认状态</Button>
+        <Button type="ghost" onClick={this.showActionSheet}>默认状态11</Button>
       </div>
       <div style={{ margin: '15px 0' }}>
         <Button type="ghost" onClick={this.showShareActionSheet}>分享功能</Button>

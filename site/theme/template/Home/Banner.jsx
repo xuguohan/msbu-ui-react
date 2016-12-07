@@ -22,8 +22,8 @@ export default class Banner extends React.Component {
       <section id="banner">
         <ScrollElement scrollName="banner" className="page">
           <QueueAnim className="banner-text-wrapper" delay={300} key="text" duration={550} type="bottom" leaveReverse>
-            <h2 key="h2">移动端设计指南&前端框架</h2>
-            <p key="content">设计、前端高效协同，快速搭建移动端组件库</p>
+            <h2 key="h2">MSBU-UI-React</h2>
+            <p key="content">基于 Ant Design Mobile - 移动端设计规范</p>
             <div className="start-button-wrap" key="button">
               <Link to="/docs/react/introduce">
                 <Icon type="smile-circle" /> 开始探索
@@ -33,8 +33,8 @@ export default class Banner extends React.Component {
               <GitHubButton
                 key="github-button"
                 type="stargazers"
-                namespace="ant-design"
-                repo="ant-design-mobile"
+                namespace="msbu-ui-react"
+                repo="msbu-ui-react"
               />
             </div>
           </QueueAnim>

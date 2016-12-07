@@ -157,7 +157,9 @@ export default class ComponentDoc extends React.Component {
     });
 
     const path = doc.meta.filename.split('/')[1];
-    const demoUrl = `${window.location.protocol}//${window.location.host}/kitchen-sink/${path}/`;
+
+    const pathname = window.location.pathname.match(/msbu-ui-react/) == null ? '/msbu-ui-react' : '';
+    const demoUrl = `${window.location.protocol}//${window.location.host}${pathname}/kitchen-sink/${path}/`;
 
     const PopoverContent = (<div>
       <h4 style={{ margin: '8Px 0 12Px' }}>扫二维码查看演示效果</h4>
@@ -166,8 +168,8 @@ export default class ComponentDoc extends React.Component {
 
     const { title, subtitle, chinese, english } = meta;
     const iframeUrl = currentIndex === 0 ?
-    `${window.location.protocol}//${window.location.host}/kitchen-sink/${path}/` :
-    `${window.location.protocol}//${window.location.host}/kitchen-sink/${path}/#${path}-demo-${currentIndex}`;
+    `${window.location.protocol}//${window.location.host}${pathname}/kitchen-sink/${path}/` :
+    `${window.location.protocol}//${window.location.host}${pathname}/kitchen-sink/${path}/#${path}-demo-${currentIndex}`;
     return (
       <DocumentTitle title={`${subtitle || chinese || ''} ${title || english} - Ant Design`}>
         <article>
