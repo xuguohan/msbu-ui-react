@@ -23,9 +23,25 @@ export default class Steps extends React.Component<StepsProps, any> {
     direction: 'vertical',
     current: 0,
   };
+  stepRefs: any;
 
+  componentDidMount() {
+    this.componentDidUpdate();
+  }
+  componentDidUpdate() {
+    if (this.props.direction !== 'horizontal') {
+      return;
+    }
+    // set tail's left position based on main's width for each step dynamically.
+    this.stepRefs.forEach(s => {
+      if (s.refs.tail) {
+        s.refs.tail.style.left = `${s.refs.main.offsetWidth / 2}px`;
+      }
+    });
+  }
   render() {
-    const { children, current } = this.props;
+    this.stepRefs = [];
+    const { children, current, status } = this.props;
     const newChildren = React.Children.map(children, (item: any, index) => {
       let className = item.props.className;
       if (index < children.length - 1 && children[index + 1].props.status === 'error') {
@@ -42,17 +58,13 @@ export default class Steps extends React.Component<StepsProps, any> {
           icon = 'ellipsis';
           className = className ? `${className} ellipsis-item` : 'ellipsis-item';
         }
-        // else if (index === current) {
-        //   // 对应 state: process
-        //   // icon = 'cross-circle-o';
-        // }
-        if (item.props.status === 'error') {
+        if (status === 'error' && index === current || item.props.status === 'error') {
           icon = 'cross-circle-o';
         }
       }
       icon = typeof icon === 'string' ? <Icon type={icon} /> : icon;
-      return React.cloneElement(item, { icon, className });
+      return React.cloneElement(item, { icon, className, ref: c => this.stepRefs[index] = c });
     });
-    return <RcSteps {...this.props}>{newChildren}</RcSteps>;
+    return <RcSteps ref="rcSteps" {...this.props}>{newChildren}</RcSteps>;
   }
 }
