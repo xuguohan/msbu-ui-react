@@ -158,7 +158,7 @@ export default class ComponentDoc extends React.Component {
 
     const path = doc.meta.filename.split('/')[1];
 
-    const pathname = window.location.pathname.match(/msbu-ui-react/) == null ? '/msbu-ui-react' : '';
+    const pathname = window.location.pathname.match(/msbu-ui-react/) ? '/msbu-ui-react' : '';
     const demoUrl = `${window.location.protocol}//${window.location.host}${pathname}/kitchen-sink/${path}/`;
 
     const PopoverContent = (<div>
