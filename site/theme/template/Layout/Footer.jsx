@@ -77,6 +77,7 @@ export default class Footer extends React.Component {
           </li>
           <li>
             <h2>相关站点</h2>
+            <div><a href="https://mobile.ant.design/">Mobile Ant Design</a> - Ant Design</div>
             <div><a href="https://g2.alipay.com/">G2</a> - 数据可视化</div>
             <div><a href="https://antv.alipay.com/">AntV</a> - 数据可视化规范</div>
             <div><a href="http://motion.ant.design">Ant Motion</a> - 设计动效</div>
