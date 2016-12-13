@@ -12,5 +12,5 @@ export interface IconProps {
 
 export default (props: IconProps) => {
   const { type, className = '' } = props;
-  return <i {...props} className={`${className} msbuicon msbuicon-${type}`.trim()} />;
+  return <i {...props} className={`${className} icon icon-${type}`.trim()} />;
 };
