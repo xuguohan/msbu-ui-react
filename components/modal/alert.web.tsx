@@ -2,7 +2,7 @@
 import React from 'react';
 /* tslint:enable:no-unused-variable */
 import ReactDOM from 'react-dom';
-import Modal from './Modal.web';
+import Modal from './Modal';
 
 export default function (...args) {
   const title = args[0];

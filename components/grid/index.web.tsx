@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import Flex from '../flex/index.web';
+import Flex from '../flex';
 import Carousel from '../carousel/index.web';
 import { DataItem, GridProps } from './PropsType';
 

@@ -2,7 +2,7 @@
 import React from 'react';
 /* tslint:enable:no-unused-variable */
 import Notification from 'rc-notification';
-import Icon from '../icon/index.web';
+import Icon from '../icon';
 
 let messageInstance;
 let prefixCls = 'am-toast';

@@ -1,3 +1,3 @@
 import '../../style/';
-import '../../list/style/index.web';
+import '../../list/style/';
 import './index.less';

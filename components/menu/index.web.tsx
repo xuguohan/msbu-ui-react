@@ -4,8 +4,6 @@ import assign from 'object-assign';
 import List from '../list';
 import Flex from '../flex';
 import SubMenu from './SubMenu.web';
-import List from '../list/index.web';
-import Flex from '../flex/index.web';
 import { MenuProps } from './PropsType';
 
 export default class Menu extends React.Component<MenuProps, any> {

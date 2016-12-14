@@ -1,7 +1,7 @@
 /* eslint no-console:0 */
 import React from 'react';
 import PopupDatePicker from 'rmc-date-picker/lib/Popup';
-import RCDatePicker from 'rmc-date-picker/lib/DatePicker.web';
+import RCDatePicker from 'rmc-date-picker/lib/DatePicker';
 import { formatFn, getProps } from './utils';
 import assign from 'object-assign';
 import tsPropsType from './PropsType';

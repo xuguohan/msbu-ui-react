@@ -2,7 +2,7 @@
 import React from 'react';
 /* tslint:enable:no-unused-variable */
 import splitObject from '../_util/splitObject';
-import List from '../list/index.web';
+import List from '../list';
 const { Item } = List;
 
 export default function handleProps(props, isIndexed) {
