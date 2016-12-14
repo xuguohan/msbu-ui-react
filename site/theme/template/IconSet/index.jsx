@@ -15,7 +15,7 @@ export default class IconSet extends React.Component {
       [className]: !!className,
     });
     return (
-      <ul className={listClassName}>
+      <ul className={listClassName} style={{ display: 'none' }}>
         {this.props.icons.map((type, i) => <CopyableIcon key={i} type={type} />)}
       </ul>
     );

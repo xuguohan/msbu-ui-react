@@ -130,14 +130,11 @@ export default class App extends React.Component {
 
     return (<div>
       <div className="demo-drawer-trigger">
-        <span onClick={this.onOpenChange}><Icon type="bars" /></span>
+        <span onClick={this.onOpenChange}><Icon type="menu" /></span>
       </div>
       <div className="demo-drawer-container">
         <Drawer sidebar={sidebar} dragHandleStyle={{ display: 'none' }} {...drawerProps}>
           <Page
-            logo="https://zos.alipayobjects.com/rmsportal/wIjMDnsrDoPPcIV.png"
-            title="Ant Design Mobile"
-            subtitle="服务于蚂蚁大中台无线业务的react组件"
             isIndex
           >
             {Object.keys(lists)

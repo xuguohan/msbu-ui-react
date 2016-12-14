@@ -224,7 +224,7 @@ export default class Home extends React.Component {
       <div id={name}>
         <div className="demo-drawer-trigger">
           <span onClick={this.onOpenChange} style={triggerActive ? { color: '#108ee9' } : {}}>
-            <Icon onTouchStart={this.onTouchStart} onTouchEnd={this.onTouchEnd} type="bars" />
+            <Icon onTouchStart={this.onTouchStart} onTouchEnd={this.onTouchEnd} type="menu" />
           </span>
         </div>
         <div className="demo-drawer-container">

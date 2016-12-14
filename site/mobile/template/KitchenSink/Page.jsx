@@ -38,17 +38,10 @@ const Page = React.createClass({
     }
   },
   render() {
-    const { logo, title, subtitle, children, style } = this.props;
+    const { children, style } = this.props;
     /* eslint prefer-template: 0 */
-    const logoDom = logo !== '' ? <div className="logo" style={{ backgroundImage: 'url(' + logo + ')' }} /> : null;
-
     return (
       <section className="am-demo-page" ref="demoPage" style={style}>
-        <div className="am-demo-hd">
-          {logoDom}
-          <h1 className="am-demo-title">{title}</h1>
-          <h2 className="am-demo-subtitle">{subtitle}</h2>
-        </div>
         <div className="am-demo-bd">
           {children}
         </div>
