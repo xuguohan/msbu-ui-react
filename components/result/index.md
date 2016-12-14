@@ -6,7 +6,6 @@ source: design
 english: Result
 ---
 
-
 在整张页面中组织插画、图标、文字等内容，向用户反馈操作结果。
 
 ### 规则
@@ -14,10 +13,7 @@ english: Result
 - 个性化且优美的插画，可以提升品牌形象。
 - 对于错误类型的结果页，页面中需要提供明确的行动点，eg：重新加载。
 
-## API
-
-
-### Result ( 适用平台：WEB )
+## API ( 适用平台：WEB )
 
 | 成员        | 说明           | 类型               | 默认值       |
 |------------|----------------|--------------------|--------------|
@@ -27,4 +23,4 @@ english: Result
 | message    |    message 文案     | String/React.Element |  -  |
 | buttonText    |    按钮文案     | string |  -  |
 | buttonType    |    请参考 button 的配置    | string |  -  |
-| buttonClick    |    按钮回调函数     | Func |  -  |
+| buttonClick    |    按钮回调函数     | (e: Object): void |  -  |

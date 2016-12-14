@@ -5,7 +5,7 @@ import WingBlank from '../wing-blank/index.web';
 import Flex from '../flex/index.web';
 import Toast from '../toast/index.web';
 import { ImagePickerPropTypes } from './PropsType';
-import TouchableButton from './touchableButton.web';
+import TouchableButton from './TouchableButton.web';
 
 function noop() { }
 

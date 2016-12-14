@@ -39,9 +39,9 @@ class Button extends React.Component<tsProps, any> {
   render() {
     let [{
       children, className, prefixCls, type, size, inline, across,
-      disabled, icon, loading, activeStyle, onClick,
+      disabled, icon, loading, activeStyle,
     }, restProps] = splitObject(this.props,
-      ['children', 'className', 'prefixCls', 'onClick', 'type', 'size', 'inline', 'across',
+      ['children', 'className', 'prefixCls', 'type', 'size', 'inline', 'across',
         'disabled', 'icon', 'loading', 'activeStyle']);
 
     const wrapCls = {
@@ -69,7 +69,6 @@ class Button extends React.Component<tsProps, any> {
     // use div, button native is buggy @yiminghe
     return (
       <Touchable
-        onPress={onClick}
         activeClassName={`${prefixCls}-active`}
         disabled={disabled}
         activeStyle={activeStyle}
@@ -80,6 +79,7 @@ class Button extends React.Component<tsProps, any> {
           style={style}
           className={classNames(wrapCls)}
           disabled={disabled}
+          onClick={disabled ? () => {} : this.props.onClick}
         >
           {iconType ? <Icon type={iconType} /> : null}
           {kids}

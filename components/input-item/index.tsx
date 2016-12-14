@@ -106,12 +106,24 @@ export default class InputItem extends React.Component<InputItemProps, any> {
       }
     });
 
+    const keyboardTypeArray = ['default', 'email-address',
+      'numeric', 'phone-pad', 'ascii-capable', 'numbers-and-punctuation',
+      'url', 'number-pad', 'name-phone-pad', 'decimal-pad', 'twitter', 'web-search'];
+
+    let keyboardType: any = 'default';
+
+    if (type === 'number' || type === 'bankCard') {
+      keyboardType = 'numeric';
+    } else if (type && keyboardTypeArray.indexOf(type) > -1) {
+      keyboardType = type;
+    }
+
     return (
       <View style={[styles.container, containerStyle, style]}>
         {children ? <Text style={[styles.text, textStyle]}>{children}</Text> : null}
         <TextInput
           style={[styles.input, inputStyle]}
-          keyboardType={type === 'number' || type === 'bankCard' ? 'numeric' : 'default'}
+          keyboardType={keyboardType}
           onChange={(event) => this.onChange(event.nativeEvent.text)}
           secureTextEntry={type === 'password'}
           clearButtonMode={clear ? 'while-editing' : 'never'}

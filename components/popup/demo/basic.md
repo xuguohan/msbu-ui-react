@@ -38,8 +38,7 @@ const Test = React.createClass({
     };
   },
   onClick(e) {
-    // 修复 Android 上点击穿透
-    e.preventDefault();
+    e.preventDefault(); // 修复 Android 上点击穿透
     Popup.show(
       <List
         renderHeader={() => '账户总览 (已绑定3个）'}
@@ -92,7 +91,7 @@ const Test = React.createClass({
   //   />, { maskClosable: true });
   // },
   render() {
-    return (<div style={{ padding: '15px' }}>
+    return (<div style={{ padding: '0.15rem' }}>
       <Button onClick={this.onClick}>显示</Button>
     </div>);
   },

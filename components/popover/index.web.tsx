@@ -1,6 +1,6 @@
 import React from 'react';
 import Tooltip from 'rc-tooltip';
-import Item from './item.web';
+import Item from './Item.web';
 import tsPropsType from './PropsType';
 
 function recursiveCloneChildren(children, cb = (ch: any, _i: number) => ch) {
@@ -28,7 +28,7 @@ export default class Popover extends React.Component<tsPropsType, any> {
     const overlayNode = recursiveCloneChildren(overlay, (child, index) => {
       const extraProps: any = { firstItem: false };
       if (child && child.type && child.type.myName === 'PopoverItem' && !child.props.disabled) {
-        extraProps.onClick = () => onSelect(child);
+        extraProps.onClick = () => onSelect(child, index);
         extraProps.firstItem = (index === 0);
         return React.cloneElement(child, extraProps);
       }

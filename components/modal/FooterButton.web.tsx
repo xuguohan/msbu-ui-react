@@ -1,13 +1,13 @@
 import React from 'react';
 import classNames from 'classnames';
 import assign from 'object-assign';
-import touchableFeedback from '../_util/touchableFeedback';
+import Touchable from 'rc-touchable';
 
 class FooterButton extends React.Component<any, any> {
   render() {
-    const { button, prefixCls, touchFeedback } = this.props;
+    const { button, prefixCls, activeStyle } = this.props;
     const restProps = assign({}, this.props);
-    ['button', 'prefixCls', 'touchFeedback', 'activeStyle'].forEach(prop => {
+    ['button', 'prefixCls', 'activeStyle'].forEach(prop => {
       if (restProps.hasOwnProperty(prop)) {
         delete restProps[prop];
       }
@@ -15,7 +15,6 @@ class FooterButton extends React.Component<any, any> {
 
     const wrapCls = classNames({
       [`${prefixCls}-button`]: true,
-      [`${prefixCls}-button-active`]: touchFeedback,
     });
 
     let buttonStyle = {};
@@ -32,17 +31,16 @@ class FooterButton extends React.Component<any, any> {
     }
 
     return (
-      <a className={wrapCls} style={buttonStyle} href="#" onClick={(e) => {
+      <Touchable activeClassName={`${prefixCls}-button-active`} activeStyle={activeStyle}>
+        <a className={wrapCls} style={buttonStyle} href="#" onClick={(e) => {
         e.preventDefault();
         if (button.onPress) {
           button.onPress();
         }
       }} {...restProps}>{button.text || `Button`}</a>
+      </Touchable>
     );
   }
-};
+}
 
-export default touchableFeedback<{
-  prefixCls?: string;
-  button?: any;
-}>(FooterButton);
+export default FooterButton;
