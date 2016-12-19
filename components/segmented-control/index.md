@@ -15,9 +15,8 @@ english: SegmentedControl
 - 尽可能保持文案长度一致。
 
 
-## API
+## API ( 适用平台：WEB、React-Native )
 
-### SegmentedControl
 | 成员        | 说明           | 类型               | 默认值       |
 |------------|----------------|--------------------|--------------|
 | prefixCls(`web only`)  | 样式前缀        | String |  `am-segment`  |
@@ -27,5 +26,5 @@ english: SegmentedControl
 | enabled  | 是否启用        | Boolean |  true  |
 | selectedIndex  | 选中项在数组中的索引        | Number |  0  |
 | values  | 选项数组,值是字符串        | array |  []  |
-| onChange(e)    |    回调函数     | Func |  function(){}  |
-| onValueChange(value)    |    回调函数     | Func |  function(){}  |
+| onChange    |    回调函数     | (e): void |  function(){}  |
+| onValueChange    |    回调函数   | (val): void |  function(){}  |

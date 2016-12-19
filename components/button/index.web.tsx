@@ -88,4 +88,4 @@ class Button extends React.Component<tsProps, any> {
   }
 }
 
-export default touchableFeedback(Button);
+export default touchableFeedback<tsProps>(Button);

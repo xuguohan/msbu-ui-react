@@ -105,15 +105,15 @@ const Demo = React.createClass({
       return (
         <div key={rowID}
           style={{
-            padding: '8px 16px',
+            padding: '0.08rem 0.16rem',
             backgroundColor: 'white',
           }}
         >
-          <h3 style={{ padding: 2, marginBottom: 8, borderBottom: '1px solid #F6F6F6' }}>
+          <h3 style={{ padding: 2, marginBottom: '0.08rem', borderBottom: '1px solid #F6F6F6' }}>
             {obj.title}
           </h3>
           <div style={{ display: '-webkit-box', display: 'flex' }}>
-            <img style={{ height: 64 * (window.viewportScale || 1), marginRight: 8 }} src={obj.img} />
+            <img style={{ height: '1.28rem', marginRight: '0.08rem' }} src={obj.img} />
             <div style={{ display: 'inline-block' }}>
               <p>{obj.des}</p>
               <p><span style={{ fontSize: '1.6em', color: '#FF6E27' }}>35</span>元/任务</p>
@@ -139,7 +139,7 @@ const Demo = React.createClass({
           height: document.body.clientHeight * 3 / 4,
           overflow: 'auto',
           border: '1px solid #ddd',
-          margin: '10px 0',
+          margin: '0.1rem 0',
         }}
         pageSize={4}
         scrollRenderAheadDistance={500}

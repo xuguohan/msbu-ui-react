@@ -25,7 +25,7 @@ class ListItem extends React.Component<ListItemProps, any> {
   render() {
     const [{
       prefixCls, className, touchFeedback, activeStyle, error, align, wrap,
-      children, multipleLine, thumb, extra, arrow = '',
+      children, multipleLine, thumb, extra, arrow,
     }, restProps] = splitObject(this.props,
       ['prefixCls', 'className', 'touchFeedback', 'activeStyle', 'error', 'align', 'wrap',
         'children', 'multipleLine', 'thumb', 'extra', 'arrow']);
@@ -77,9 +77,7 @@ class ListItem extends React.Component<ListItemProps, any> {
   }
 }
 
-// 给其他组件对其设置 extra 使用
-const highOrderListItem = touchableFeedback(ListItem, {
-  myName: 'ListItem',
+const highOrderListItem = touchableFeedback<ListItemProps>(ListItem, {
   Brief,
 });
 export default highOrderListItem;
