@@ -93,6 +93,7 @@ let Test = React.createClass({
         <Picker data={this.state.data} cols={this.state.cols}
           {...getFieldProps('district2')}
           onPickerChange={this.onPickerChange}
+          format={(values) => values.join('|')}
         >
           <List.Item arrow="horizontal" onClick={this.onClick}>省市选择(异步加载)</List.Item>
         </Picker>
