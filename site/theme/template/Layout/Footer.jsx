@@ -41,7 +41,7 @@ export default class Footer extends React.Component {
       title: 'antd 新版发布！',
       content: (
         <div>
-          <img src="https://os.alipayobjects.com/rmsportal/nyqBompsynAQCpJ.svg" alt="Ant Design" />
+          <img src="https://os.alipayobjects.com/rmsportal/nyqBompsynAQCpJ.svg" alt="Msbu Design" />
           <p>
             您好，<a target="_blank" rel="noopener noreferrer" href="/#/changelog">antd@1.0</a> 已正式发布，欢迎升级。
             如果您还需要使用旧版，请查阅 <a target="_blank" rel="noopener noreferrer" href="http://012x.ant.design">012x.ant.design</a>
@@ -77,11 +77,8 @@ export default class Footer extends React.Component {
           </li>
           <li>
             <h2>相关站点</h2>
-            <div><a href="https://mobile.ant.design/">Mobile Ant Design</a> - Ant Design</div>
-            <div><a href="https://g2.alipay.com/">G2</a> - 数据可视化</div>
-            <div><a href="https://antv.alipay.com/">AntV</a> - 数据可视化规范</div>
-            <div><a href="http://motion.ant.design">Ant Motion</a> - 设计动效</div>
-            <div><a href="http://ux.ant.design">Ant UX</a> - 页面逻辑素材</div>
+            <div><a href="https://msbu-fe.github.io/msbu-design/">Msbu Design</a> - Msbu Design</div>
+            <div><a href="https://mobile.ant.design/">Ant Design</a> - 强力驱动</div>
           </li>
           <li>
             <h2>联系我们</h2>

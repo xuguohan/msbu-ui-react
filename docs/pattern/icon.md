@@ -10,7 +10,7 @@ english: Icon
 
 ### 图标规则设计／Basic Rules You Should Know Before Start   
 
-Ant design的图标设计思路遵循的依然是小颗粒自由组装的概念，通过定义图标的最基本单位，如线条、圆角、斜线，曲线来确保图标设计的一致性和高效。进一步了解ant design图标设计规则请 点此下载 
+Msbu design的图标设计思路遵循的依然是小颗粒自由组装的概念，通过定义图标的最基本单位，如线条、圆角、斜线，曲线来确保图标设计的一致性和高效。进一步了解ant design图标设计规则请 点此下载 
 
 ### 图标命名／Naming 
 

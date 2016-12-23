@@ -29,7 +29,7 @@ export default function Page1() {
         key="text" duration={550} type="bottom" leaveReverse
       >
         <h2 key="h2">一套完善的设计基础指南</h2>
-        <p key="p" style={{ maxWidth: 260 }}>Ant Design Mobile抽象了移动端产品通用的设计基础样式</p>
+        <p key="p" style={{ maxWidth: 260 }}>Msbu Design Mobile抽象了移动端产品通用的设计基础样式</p>
         <div key="button">
           <Link to="/docs/pattern/color">
             <Button type="primary" size="large">

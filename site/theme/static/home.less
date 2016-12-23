@@ -27,7 +27,7 @@
   position: relative;
   height: 100%;
   width: 100%;
-  background: url("https://zos.alipayobjects.com/rmsportal/IXMdzCCuOjjyQiO.png") no-repeat center / cover;
+  background: #464853 url("https://liulanqi.baidu.com/theme/images/bg-space-6e69cd1.png") no-repeat center / cover;
   .image-wrapper {
     width: 38%;
     position: absolute;
@@ -109,7 +109,7 @@
   position: relative;
   height: 100%;
   width: 100%;
-  background: url("https://zos.alipayobjects.com/rmsportal/lygDTdXxNWVogxN.jpg") no-repeat center / cover;
+  background: #464853 url("https://liulanqi.baidu.com/theme/images/bg-space-6e69cd1.png") no-repeat center / cover;
 }
 
 .content-wrapper {
@@ -179,12 +179,12 @@
   right: 0;
 }
 
-.image2 {
-  background: url("https://zos.alipayobjects.com/rmsportal/AGoqUqGPNcPZQXx.png") no-repeat left / 505Px;
+.image-wrapper.image2 {
+  background: url("https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/dpp/pic/item/b999a9014c086e06a35052300b087bf40bd1cbd5.jpg") no-repeat left / 505Px;
   background-origin: content-box;
   height: 604Px;
   position: absolute;
-  top: 15%;
+  top: 5%;
   left: 10%;
 }
 
@@ -255,5 +255,53 @@
   img {
     // width: 199Px;
     // height: 168Px;
+  }
+}
+#react-content .mountain {
+  width: 240em;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#react-content .mountain-1 {
+  height: 10.5em;
+  z-index: 3;
+  background: url(//liulanqi.baidu.com/theme/images/bg-mountain-1-11661c6.png) repeat-x;
+  background-size: auto 100%;
+}
+#react-content .mountain-2 {
+  height: 12em;
+  z-index: 2;
+  background: url(//liulanqi.baidu.com/theme/images/bg-mountain-2-f8a4360.png) repeat-x;
+  background-size: auto 100%;
+}
+#react-content .mountain-3 {
+  height: 17.78125em;
+  z-index: 1;
+  background: url(//liulanqi.baidu.com/theme/images/bg-mountain-3-54c28fd.png) repeat-x;
+  background-size: auto 100%;
+}
+#react-content .mountains {
+  opacity: 1;
+  animation: mountains-in 0.8s ease-out 0s 1 normal forwards;
+}
+#react-content .mountain-1 {
+  transform: translate3d(0, 0, 0);
+  animation: moving 100s linear 0.8s infinite normal none;
+}
+#react-content .mountain-2 {
+  transform: translate3d(0, 0, 0);
+  animation: moving 160s linear 0.8s infinite normal none;
+}
+#react-content .mountain-3 {
+  transform: translate3d(0, 0, 0);
+  animation: moving 360s linear 0.8s infinite normal none;
+}
+@keyframes moving {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
   }
 }

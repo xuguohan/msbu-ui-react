@@ -121,8 +121,8 @@ export default class Header extends React.Component {
               type="menu"
             />
             <Link to="/" id="logo">
-              <img alt="logo" src="https://zos.alipayobjects.com/rmsportal/wIjMDnsrDoPPcIV.png" />
-              <span>ANT DESIGN | MOBILE</span>
+              <img alt="logo" src="https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/dpp/pic/item/7dd98d1001e9390120f7ca4572ec54e737d196d7.jpg" />
+              <span>MSBU DESIGN | MOBILE</span>
             </Link>
           </Col>
           <Col className={`nav ${this.state.menuVisible ? 'nav-show' : ''}`}

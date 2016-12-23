@@ -108,7 +108,7 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <DocumentTitle title="MSBU-UI-React | 基于 Ant Design Mobile - 移动端设计规范">
+      <DocumentTitle title="MSBU-UI-React | 基于 Msbu Design Mobile - 移动端设计规范">
         <div className="main-wrapper">
           <Link />
           <Banner />
@@ -118,6 +118,11 @@ export default class Home extends React.Component {
           */}
           <Page2 />
           <style dangerouslySetInnerHTML={{ __html: this.getStyle() }} />
+          <div className="mountains">
+            <div className="mountain mountain-1">&nbsp;</div>
+            <div className="mountain mountain-2">&nbsp;</div>
+            <div className="mountain mountain-3">&nbsp;</div>
+          </div>
         </div>
       </DocumentTitle>
     );

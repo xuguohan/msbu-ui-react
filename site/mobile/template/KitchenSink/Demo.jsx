@@ -115,7 +115,7 @@ export default class Home extends React.Component {
 
     const sidebar = (<div>
       <div className="demo-drawer-home">
-        <Link to="/">Ant Design Mobile</Link>
+        <Link to="/">Msbu Design Mobile</Link>
       </div>
       {Object.keys(lists)
         .sort((a, b) => config.categoryOrder[a] - config.categoryOrder[b])

@@ -23,7 +23,7 @@ export default class Banner extends React.Component {
         <ScrollElement scrollName="banner" className="page">
           <QueueAnim className="banner-text-wrapper" delay={300} key="text" duration={550} type="bottom" leaveReverse>
             <h2 key="h2">MSBU-UI-React</h2>
-            <p key="content">基于 Ant Design Mobile - 移动端设计规范</p>
+            <p key="content">基于 Msbu Design Mobile - 移动端设计规范</p>
             <div className="start-button-wrap" key="button">
               <Link to="/docs/react/introduce">
                 <Icon type="smile-circle" /> 开始探索

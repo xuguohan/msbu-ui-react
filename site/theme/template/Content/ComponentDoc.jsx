@@ -171,7 +171,7 @@ export default class ComponentDoc extends React.Component {
     `${window.location.protocol}//${window.location.host}${pathname}/kitchen-sink/${path}/` :
     `${window.location.protocol}//${window.location.host}${pathname}/kitchen-sink/${path}/#${path}-demo-${currentIndex}`;
     return (
-      <DocumentTitle title={`${subtitle || chinese || ''} ${title || english} - Ant Design`}>
+      <DocumentTitle title={`${subtitle || chinese || ''} ${title || english} - Msbu Design`}>
         <article>
           <section className="markdown">
             <h1 className="section-title">

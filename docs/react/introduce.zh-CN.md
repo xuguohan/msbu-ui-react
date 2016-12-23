@@ -1,12 +1,12 @@
 ---
 order: 0
-english: Ant Design Mobile of React
+english: Msbu Design Mobile of React
 ---
 
-`antd-mobile` 是 Ant Design 的移动规范的 React 实现，服务于蚂蚁及口碑无线业务。
+`antd-mobile` 是 Msbu Design 的移动规范的 React 实现，服务于蚂蚁及口碑无线业务。
 
 <div class="pic-plus">
-  <img width="160" src="https://zos.alipayobjects.com/rmsportal/wIjMDnsrDoPPcIV.png">
+  <img width="160" src="https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/dpp/pic/item/7dd98d1001e9390120f7ca4572ec54e737d196d7.jpg">
   <span>+</span>
   <img width="160" src="https://t.alipayobjects.com/images/rmsweb/T16xRhXkxbXXXXXXXX.svg">
 </div>
@@ -26,7 +26,7 @@ english: Ant Design Mobile of React
 }
 </style>
 
-[Ant Design](http://ant.design) 在中后台领域的耕耘取得了很多成绩，使得 Ant Design 设计规范和 React 逐渐成为蚂蚁金服主流的前端产品开发模式，也受到社区的广泛关注。我们没有止步于此，一年后推出了 Ant Design 移动端规范及其实现。
+[Msbu Design](http://ant.design) 在中后台领域的耕耘取得了很多成绩，使得 Msbu Design 设计规范和 React 逐渐成为蚂蚁金服主流的前端产品开发模式，也受到社区的广泛关注。我们没有止步于此，一年后推出了 Msbu Design 移动端规范及其实现。
 
 随着蚂蚁金服中后台的移动端需求增多，不同的设计规范及研发方式，给设计者和开发者带来大量的重复工作，降低了产品的研发效率。
 
@@ -36,7 +36,7 @@ english: Ant Design Mobile of React
 
 ## 特性
 
-- 基于 Ant Design 移动设计规范。
+- 基于 Msbu Design 移动设计规范。
 - 规则化的视觉样式配置，适应各类产品风格。
 - 基于 React Native 的多平台支持。
 - 使用 TypeScript 开发，提供类型定义文件。
@@ -120,12 +120,6 @@ AppRegistry.registerComponent('HelloWorldApp', () => HelloWorldApp);
 - [首页](/)
 - [开发文档](http://github.com/ant-design/ant-design-mobile/blob/master/development.md)
 - [React 模块](http://github.com/react-component)
-
-## 谁在使用
-
-- 蚂蚁金服
-- 阿里巴巴
-- 口碑
 
 ## 欢迎参与
 
